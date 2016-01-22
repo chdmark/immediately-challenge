@@ -10,7 +10,6 @@ class MessagesController < ApplicationController
 		p "*" * 50
 		
 		message_body = parsed_data["snippet"]
-		ap message_body
 		p "*" * 50
 	
 
@@ -25,6 +24,7 @@ class MessagesController < ApplicationController
 		message_recipient = headers[3]["value"]
 		message_subject = headers[5]["value"]
 		
+		ap message_body
 		ap date_sent
 		ap message_author
 		ap message_recipient

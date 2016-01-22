@@ -14,9 +14,13 @@
 ActiveRecord::Schema.define(version: 20160122212406) do
 
   create_table "messages", force: :cascade do |t|
-    t.string   "serialized_data"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string   "sender"
+    t.string   "recipient"
+    t.string   "date_sent"
+    t.string   "subject"
+    t.string   "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
