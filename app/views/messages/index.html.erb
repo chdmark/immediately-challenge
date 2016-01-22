@@ -1,0 +1,11 @@
+<div id="JSONDATA">
+	Send Message!
+
+	<br>
+	<%= form_for :message, url: '/messages', html: {id: "messages-form"} do |f| %>
+	<%= f.text_field :body %>
+	<%= f.button "Submit" %>
+	<% end %>
+
+
+</div>

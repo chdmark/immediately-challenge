@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+
+
+})
+
+var sendMessageListener = function() {
+	$('body').on('submit', '#messages-form', function(event){
+		event.preventDefault(); 
+		debugger
+
+	})
+
+}
