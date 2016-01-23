@@ -7,10 +7,8 @@ class MessagesController < ApplicationController
 	def create
 		
 		parsed_data = JSON.parse(params[:message][:body])
-		p "*" * 50
 		
 		
-
 		headers = parsed_data["payload"]["headers"]
 
 		message_body = parsed_data["snippet"]
